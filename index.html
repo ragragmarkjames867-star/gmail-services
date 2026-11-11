@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gmail Services | Digital Solutions</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle"
+                data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#home">
+                    GMAIL SERVICES
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart">Cart 🛒 <span id="cart-count">0</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    WELCOME TO GMAIL SERVICES
+                </p>
+
+                <h1>Make Your Digital Life Easier.</h1>
+
+                <p>
+                    Discover convenient and reliable email setup
+                    and professional digital services for your needs.
+                </p>
+
+                <a href="#services" class="btn btn-primary">
+                    EXPLORE SERVICES
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+        <div class="container">
+
+            <div class="section-heading">
+                <p>WHAT WE OFFER</p>
+                <h2>Our Services</h2>
+                <span>Explore our available digital services.</span>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">✉️</div>
+                        <h3>Email Setup Assistance</h3>
+                        <p>
+                            Get assistance with setting up
+                            your personal email.
+                        </p>
+                        <h4>₱199.00</h4>
+
+                        <button class="btn btn-primary"
+                        onclick="addToCart('Email Setup Assistance', 199)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">💼</div>
+                        <h3>Business Email Setup</h3>
+                        <p>
+                            Assistance in configuring
+                            a professional business email.
+                        </p>
+                        <h4>₱299.00</h4>
+
+                        <button class="btn btn-primary"
+                        onclick="addToCart('Business Email Setup', 299)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Email Configuration</h3>
+                        <p>
+                            Get help organizing and
+                            configuring your email settings.
+                        </p>
+                        <h4>₱149.00</h4>
+
+                        <button class="btn btn-primary"
+                        onclick="addToCart('Email Configuration', 149)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+
+                    <p>
+                        Welcome to Gmail Services!
+                        We provide convenient digital assistance
+                        for individuals and businesses who need
+                        help with email setup and configuration.
+                    </p>
+
+                    <p>
+                        Our goal is to make email services
+                        easier, simpler, and more accessible.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="about-box">
+                        <h3>Why Choose Us?</h3>
+                        <p>✓ Convenient Assistance</p>
+                        <p>✓ Reliable Service</p>
+                        <p>✓ Customer Support</p>
+                        <p>✓ Affordable Pricing</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+
+            <div class="section-heading">
+                <p>GET IN TOUCH</p>
+                <h2>Contact Us</h2>
+                <span>We would love to hear from you!</span>
+            </div>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong> your@email.com</p>
+                <p><strong>Phone:</strong> 09XX-XXX-XXXX</p>
+                <p><strong>Location:</strong> Philippines</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CART SECTION -->
+    <section id="cart" class="cart-section">
+        <div class="container">
+
+            <div class="section-heading">
+                <p>YOUR SELECTION</p>
+                <h2>My Shopping Cart 🛒</h2>
+                <span>Review your selected services.</span>
+            </div>
+
+            <div class="cart-box">
+
+                <ul id="cart-items">
+                    <li>Your cart is currently empty.</li>
+                </ul>
+
+                <hr>
+
+                <h3>
+                    Total: ₱<span id="cart-total">0.00</span>
+                </h3>
+
+                <button type="button" class="btn btn-danger"
+                onclick="clearCart()">
+                    Clear Cart
+                </button>
+
+            </div>
+
+
+            <!-- CHECKOUT -->
+            <div class="checkout-box">
+
+                <h2>Checkout</h2>
+
+                <p>Enter your information to place your order.</p>
+
+                <form id="checkout-form">
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text"
+                        id="customer-name"
+                        class="form-control"
+                        placeholder="Enter your full name"
+                        maxlength="100"
+                        required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email"
+                        id="customer-email"
+                        class="form-control"
+                        placeholder="Enter your email"
+                        maxlength="150"
+                        required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Contact Number</label>
+                        <input type="tel"
+                        id="customer-phone"
+                        class="form-control"
+                        placeholder="Enter your contact number"
+                        maxlength="20"
+                        required>
+                    </div>
+
+
+                    <!-- PAYMENT METHOD -->
+                    <div class="form-group">
+
+                        <label for="payment-method">
+                            Choose Payment Method
+                        </label>
+
+                        <select id="payment-method"
+                        class="form-control" required>
+
+                            <option value="">
+                                Select payment method
+                            </option>
+
+                            <option value="GCash">
+                                GCash
+                            </option>
+
+                            <option value="Bank Transfer">
+                                Bank Transfer
+                            </option>
+
+                            <option value="Cash on Delivery / Pay in Person">
+                                Cash on Delivery / Pay in Person
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="alert alert-info">
+                        <strong>Payment Reminder:</strong>
+                        Your payment will be marked as pending
+                        until it is verified.
+                    </div>
+
+
+                    <button type="submit"
+                    id="place-order-button"
+                    class="btn btn-primary btn-lg">
+
+                        PLACE ORDER
+
+                    </button>
+
+                </form>
+
+
+                <!-- ORDER CONFIRMATION -->
+                <div id="order-confirmation"
+                class="alert alert-success"
+                style="display:none; margin-top:25px;">
+
+                    <h3>Thank You for Your Order!</h3>
+
+                    <p>Your order request has been submitted.</p>
+
+                    <p>
+                        Order Number:
+                        <strong id="order-number"></strong>
+                    </p>
+
+                    <p>
+                        Customer:
+                        <strong id="confirmation-name"></strong>
+                    </p>
+
+                    <p>
+                        Payment Method:
+                        <strong id="confirmation-payment"></strong>
+                    </p>
+
+                    <p>
+                        Total:
+                        <strong id="confirmation-total"></strong>
+                    </p>
+
+                    <p>
+                        Payment Status:
+                        <strong>Pending Verification</strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+
+            <h3>GMAIL SERVICES</h3>
+
+            <p>
+                Your trusted partner for convenient
+                email and digital assistance.
+            </p>
+
+            <p>
+                © 2026 Gmail Services. All Rights Reserved.
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

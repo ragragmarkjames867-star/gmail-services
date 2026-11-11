@@ -1,0 +1,360 @@
+/* =========================
+   GENERAL SETTINGS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    margin: 0;
+    padding-top: 70px;
+    font-family: 'Poppins', sans-serif;
+    color: #202124;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.navbar-default {
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    padding: 10px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.navbar-default .navbar-brand {
+    color: #4285F4;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #444444;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #4285F4;
+    background-color: #f1f5ff;
+}
+
+.navbar-default .navbar-nav > .active > a {
+    color: #4285F4;
+    background-color: #f1f5ff;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #4285F4;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #4285F4;
+}
+
+
+/* =========================
+   HOME SECTION
+========================= */
+
+.hero {
+    min-height: 520px;
+    background: linear-gradient(135deg, #e8f0fe, #ffffff);
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-subtitle {
+    color: #4285F4;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin: 20px 0;
+    color: #202124;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #5f6368;
+    line-height: 1.8;
+}
+
+.hero .btn {
+    background-color: #4285F4;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 30px;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #1967d2;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    color: #4285F4;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin: 15px 0;
+    color: #202124;
+}
+
+.section-heading span {
+    color: #777777;
+    font-size: 15px;
+}
+
+
+/* =========================
+   SERVICES SECTION
+========================= */
+
+.services-section {
+    padding: 90px 0;
+    background-color: #ffffff;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    padding: 35px 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    min-height: 310px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(66,133,244,0.12);
+}
+
+.service-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 50px;
+}
+
+.service-card h4 {
+    color: #4285F4;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.service-card .btn {
+    background-color: #4285F4;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+.service-card .btn:hover {
+    background-color: #1967d2;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    padding: 90px 0;
+    background-color: #f8faff;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.about-section p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.about-box {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.about-box h3 {
+    margin-bottom: 25px;
+}
+
+.about-box p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    padding: 90px 0;
+    background-color: #ffffff;
+}
+
+.contact-info {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    background-color: #f8faff;
+    border-radius: 15px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555555;
+    margin: 20px 0;
+}
+
+
+/* =========================
+   CART SECTION
+========================= */
+
+.cart-section {
+    padding: 70px 0;
+    background-color: #f8faff;
+    text-align: center;
+}
+
+.cart-section h2 {
+    margin-bottom: 30px;
+}
+
+.cart-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-section li {
+    padding: 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #202124;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer h3 {
+    color: #4285F4;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+.footer p {
+    color: #cccccc;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 767px) {
+
+    .hero {
+        min-height: 450px;
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .services-section,
+    .about-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .navbar-default .navbar-collapse {
+        background-color: #ffffff;
+    }
+
+}
